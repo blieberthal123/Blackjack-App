@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackjack.HomeController">
+   <children>
+      <Label layoutX="105.0" layoutY="29.0" text="BLACKJACK!!!">
+         <font>
+            <Font name="Courier New Bold Italic" size="55.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="259.0" layoutY="240.0" mnemonicParsing="false" onAction="#switchToAtm" style="-fx-background-radius: 360; -fx-background-color: lightgreen; -fx-border-width: 2; -fx-border-radius: 360; -fx-border-color: black;" text="ATM" textAlignment="CENTER">
+         <font>
+            <Font name="Impact" size="28.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="249.0" layoutY="144.0" mnemonicParsing="false" onAction="#switchToGame" style="-fx-background-radius: 360; -fx-background-color: lightgreen; -fx-border-width: 2; -fx-border-radius: 360; -fx-border-color: black;" text="Game" textAlignment="CENTER">
+         <font>
+            <Font name="Impact" size="28.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="217.0" fitWidth="177.0" layoutX="33.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/ace_of_spades.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="217.0" fitWidth="177.0" layoutX="420.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/ace_of_hearts.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

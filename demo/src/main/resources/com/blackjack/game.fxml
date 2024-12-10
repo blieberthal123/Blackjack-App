@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackjack.GameController">
+   <children>
+      <ImageView fitHeight="129.0" fitWidth="82.0" layoutX="300.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/card_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerCard1" fitHeight="129.0" fitWidth="82.0" layoutX="120.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/card_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerCard2" fitHeight="129.0" fitWidth="82.0" layoutX="209.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/card_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerCard3" fitHeight="129.0" fitWidth="82.0" layoutX="300.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/card_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerCard4" fitHeight="129.0" fitWidth="82.0" layoutX="394.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/card_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerCard5" fitHeight="129.0" fitWidth="82.0" layoutX="493.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/card_back.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="hitButton" layoutX="42.0" layoutY="287.0" mnemonicParsing="false" onAction="#hit" style="-fx-background-color: lightblue; -fx-border-width: 2; -fx-border-color: black;" text="Hit" visible="false">
+         <font>
+            <Font name="Gadugi Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="standButton" layoutX="34.0" layoutY="327.0" mnemonicParsing="false" onAction="#stand" style="-fx-background-color: lightblue; -fx-border-width: 2; -fx-border-color: black;" text="Stand" visible="false">
+         <font>
+            <Font name="Gadugi Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="dealerCard1" fitHeight="129.0" fitWidth="82.0" layoutX="120.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/card_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dealerCard2" fitHeight="129.0" fitWidth="82.0" layoutX="209.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/card_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dealerCard3" fitHeight="129.0" fitWidth="82.0" layoutX="300.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/card_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dealerCard4" fitHeight="129.0" fitWidth="82.0" layoutX="394.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/card_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dealerCard5" fitHeight="129.0" fitWidth="82.0" layoutX="493.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/card_back.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="betSlider" layoutX="17.0" layoutY="142.0" prefHeight="14.0" prefWidth="269.0" style="-fx-background-color: green;" />
+      <Label fx:id="betLabel" layoutX="22.0" layoutY="162.0" prefHeight="32.0" prefWidth="260.0" text="\$0" textAlignment="CENTER" textFill="#00ff15">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" layoutX="120.0" layoutY="178.0" mnemonicParsing="false" onAction="#start" prefHeight="32.0" prefWidth="63.0" style="-fx-background-color: pink; -fx-border-width: 2; -fx-border-color: black;" text="START" visible="false">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="dealerLabel" layoutX="448.0" layoutY="146.0" prefHeight="32.0" prefWidth="90.0" textAlignment="CENTER" textFill="#00f3ff">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerLabel" layoutX="448.0" layoutY="226.0" prefHeight="32.0" prefWidth="90.0" textAlignment="CENTER" textFill="#00f3ff">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="homeButton" layoutX="455.0" layoutY="184.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="32.0" prefWidth="63.0" style="-fx-background-color: pink; -fx-border-width: 2; -fx-border-color: black;" text="HOME">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="outcomeLabel" layoutX="22.0" layoutY="226.0" prefHeight="32.0" prefWidth="269.0" textAlignment="CENTER" textFill="#00f3ff">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
